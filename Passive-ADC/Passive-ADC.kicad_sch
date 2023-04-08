@@ -662,7 +662,7 @@
     (property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" (id 2) (at 42.8752 35.56 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "1276-2568-2-ND" (id 3) (at 41.91 31.75 0)
+    (property "Datasheet" "1276-1003-2-ND" (id 3) (at 41.91 31.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid ef19edc4-51b2-438c-9e19-200846ce747e))
