@@ -1,0 +1,17 @@
+[binaries]
+c = 'arm-zephyr-eabi-gcc'
+ar = 'arm-zephyr-eabi-ar'
+as = 'arm-zephyr-eabi-as'
+nm = 'arm-zephyr-eabi-nm'
+strip = 'arm-zephyr-eabi-strip'
+# only needed to run tests
+exe_wrapper = ['env', 'run-arm']
+
+[host_machine]
+system = 'zephyr'
+cpu_family = 'arm'
+cpu = 'arm'
+endian = 'little'
+
+[properties]
+skip_sanity_check = true

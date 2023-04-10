@@ -1,0 +1,21 @@
+[binaries]
+c = 'riscv64-unknown-elf-gcc'
+ar = 'riscv64-unknown-elf-ar'
+as = 'riscv64-unknown-elf-as'
+strip = 'riscv64-unknown-elf-strip'
+nm = 'riscv64-unknown-elf-nm'
+# only needed to run tests
+exe_wrapper = ['env', 'run-riscv']
+
+[host_machine]
+system = 'unknown'
+cpu_family = 'riscv64'
+cpu = 'riscv'
+endian = 'little'
+
+[properties]
+# this uses shorter but slower function entry code
+c_args = [ '-msave-restore' ]
+# default multilib is 64 bit
+c_args_ = [ '-mcmodel=medany' ]
+skip_sanity_check = true

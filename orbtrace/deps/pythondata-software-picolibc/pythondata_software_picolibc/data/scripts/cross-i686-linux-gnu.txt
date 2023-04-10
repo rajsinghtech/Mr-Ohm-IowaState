@@ -1,0 +1,19 @@
+[binaries]
+c = ['i686-linux-gnu-gcc', '-march=core2', '-mfpmath=sse', '-msse2', '-fno-pic', '-fno-PIE', '-static']
+ar = 'i686-linux-gnu-ar'
+as = 'i686-linux-gnu-as'
+nm = 'i686-linux-gnu-nm'
+strip = 'i686-linux-gnu-strip'
+# only needed to run tests
+exe_wrapper = ['env', 'run-i386']
+
+[host_machine]
+system='linux'
+cpu_family='x86'
+cpu='i386'
+endian='little'
+
+[properties]
+skip_sanity_check = true
+needs_exe_wrapper = true
+link_spec = '--build-id=none'

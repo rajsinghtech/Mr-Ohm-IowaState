@@ -1,0 +1,57 @@
+name: build
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  orbtrace_mini:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: recursive 
+      - uses: YosysHQ/setup-oss-cad-suite@v1
+      - uses: gregdavill/setup-riscv-gnu-toolchain@v1.0
+      - run: python3 -m pip install wheel construct meson ninja setuptools setuptools_scm Jinja2
+      - run: ./orbtrace_builder.py --platform orbtrace_mini --build
+      - uses: actions/upload-artifact@v3
+        with:
+          name: orbtrace_mini
+          path: |
+            build/orbtrace_mini/gateware/orbtrace_mini.bit
+            build/orbtrace_mini/gateware/csr.csv
+
+  orbtrace_mini_dfu:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: recursive 
+      - uses: YosysHQ/setup-oss-cad-suite@v1
+      - uses: gregdavill/setup-riscv-gnu-toolchain@v1.0
+      - run: python3 -m pip install wheel construct meson ninja setuptools setuptools_scm Jinja2
+      - run: ./orbtrace_builder.py --platform orbtrace_mini --profile dfu --build 
+      - uses: actions/upload-artifact@v3
+        with:
+          name: orbtrace_mini_dfu
+          path: |
+            build/orbtrace_mini_dfu/gateware/orbtrace_mini.bit
+            build/orbtrace_mini_dfu/gateware/csr.csv
+  
+  orbtrace_mini_test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: recursive 
+      - uses: YosysHQ/setup-oss-cad-suite@v1
+      - uses: gregdavill/setup-riscv-gnu-toolchain@v1.0
+      - run: python3 -m pip install wheel construct meson ninja setuptools setuptools_scm Jinja2
+      - run: ./orbtrace_builder.py --platform orbtrace_mini --profile test --build 
+      - uses: actions/upload-artifact@v3
+        with:
+          name: orbtrace_mini_test
+          path: |
+            build/orbtrace_mini_test/gateware/orbtrace_mini.bit
+            build/orbtrace_mini_test/gateware/csr.csv

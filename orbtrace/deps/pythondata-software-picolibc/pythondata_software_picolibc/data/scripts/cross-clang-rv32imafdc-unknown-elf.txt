@@ -1,0 +1,21 @@
+[binaries]
+c = ['clang', '-m32', '-target', 'riscv32-unknown-elf', '-march=rv32imafdc']
+c_ld = '/usr/bin/riscv64-unknown-elf-ld'
+ar = 'riscv64-unknown-elf-ar'
+as = 'riscv64-unknown-elf-as'
+nm = 'riscv64-unknown-elf-nm'
+strip = 'riscv64-unknown-elf-strip'
+# only needed to run tests
+exe_wrapper = ['env', 'run-rv32imafdc']
+
+[host_machine]
+system = 'none'
+cpu_family = 'riscv32'
+cpu = 'riscv'
+endian = 'little'
+
+[properties]
+c_args = ['-Werror=double-promotion']
+c_link_args = ['-Wl,-melf32lriscv', '-L/usr/lib/gcc/riscv64-unknown-elf/8.3.0/rv32imafdc/ilp32d']
+skip_sanity_check = true
+has_link_defsym = true
