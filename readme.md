@@ -3,7 +3,7 @@ The BetterBots project is a robot designed to teach coding and engineering conce
 
 ## Folder Structure
 The project's GitHub repository contains the following folders:
-
+```
 root/
 ├── Board_Design_Files/
 │   ├── Active-ADC/
@@ -16,6 +16,9 @@ root/
 └── Digital_Design_Files/
     ├── Orbtrace/
     └── betterbots.tar
+```
+
+
 
 # Board_Design_Files: 
 This folder contains the design files for the board. The files are divided into two subfolders, Active-ADC and Passive-ADC, which contain the active and passive components, respectively. The ActiveGerber.zip and PassiveGerber.zip files contain the Gerber files necessary for manufacturing the board. The bom.xlsx file lists all the components required for the board design.
