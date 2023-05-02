@@ -5,18 +5,17 @@ The BetterBots project is a robot designed to teach coding and engineering conce
 The project's GitHub repository contains the following folders:
 
 root/
-
-├── [Board_Design_Files](Board_Design_Files)/
-│   ├── [Active-ADC](Board_Design_Files/Active-ADC/)/
-│   ├── [Passive-ADC](Board_Design_Files/Passive-ADC)/
-│   ├── [ActiveGerber.zip](Board_Design_Files/ActiveGerber.zip)
-│   ├── [PassiveGerber.zip](Board_Design_Files/PassiveGerber.zip)
-│   └── [bom.xlsx](Board_Design_Files/bom.xlsx)
-├── [Simulation](Simulation)/
-│   └── [LTSpice](Simulation/LTSpice)/
-└── [Digital_Design_Files](Digital_Design_Files)/
-    ├── [orbtrace](Digital_Design_Files/orbtrace/)/
-    └── [betterbots.tar](Digital_Design_Files/betterbots.tar)
+├── Board_Design_Files/
+│   ├── Active-ADC/
+│   ├── Passive-ADC/
+│   ├── ActiveGerber.zip
+│   ├── PassiveGerber.zip
+│   └── bom.xlsx
+├── Simulation/
+│   └── LTSpice/
+└── Digital_Design_Files/
+    ├── Orbtrace/
+    └── betterbots.tar
 
 # Board_Design_Files: 
 This folder contains the design files for the board. The files are divided into two subfolders, Active-ADC and Passive-ADC, which contain the active and passive components, respectively. The ActiveGerber.zip and PassiveGerber.zip files contain the Gerber files necessary for manufacturing the board. The bom.xlsx file lists all the components required for the board design.
