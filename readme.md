@@ -7,25 +7,15 @@ The project's GitHub repository contains the following folders:
 root/
 
 ├── [Board_Design_Files](Board_Design_Files)/
-
 │   ├── [Active-ADC](Board_Design_Files/Active-ADC/)/
-
 │   ├── [Passive-ADC](Board_Design_Files/Passive-ADC)/
-
 │   ├── [ActiveGerber.zip](Board_Design_Files/ActiveGerber.zip)
-
 │   ├── [PassiveGerber.zip](Board_Design_Files/PassiveGerber.zip)
-
 │   └── [bom.xlsx](Board_Design_Files/bom.xlsx)
-
 ├── [Simulation](Simulation)/
-
 │   └── [LTSpice](Simulation/LTSpice)/
-
 └── [Digital_Design_Files](Digital_Design_Files)/
-
     ├── [orbtrace](Digital_Design_Files/orbtrace/)/
-
     └── [betterbots.tar](Digital_Design_Files/betterbots.tar)
 
 # Board_Design_Files: 
