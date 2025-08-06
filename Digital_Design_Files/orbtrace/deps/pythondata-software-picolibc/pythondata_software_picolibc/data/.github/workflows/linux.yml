@@ -24,7 +24,7 @@ jobs:
 
       - name: Cache the Docker Image
         id: cache
-        uses: actions/cache@v2
+        uses: actions/cache@v4
         with:
           path: ${{ env.IMAGE_FILE }}
           key: ${{ env.IMAGE_FILE }}-${{ hashFiles( env.HASH_FILE ) }}
@@ -94,7 +94,7 @@ jobs:
           path: picolibc
 
       - name: Restore the Docker Image
-        uses: actions/cache@v2
+        uses: actions/cache@v4
         with:
           path: ${{ env.IMAGE_FILE }}
           key: ${{ env.IMAGE_FILE }}-${{ hashFiles( env.HASH_FILE ) }}
@@ -159,7 +159,7 @@ jobs:
           path: picolibc
 
       - name: Restore the Docker Image
-        uses: actions/cache@v2
+        uses: actions/cache@v4
         with:
           path: ${{ env.IMAGE_FILE }}
           key: ${{ env.IMAGE_FILE }}-${{ hashFiles( env.HASH_FILE ) }}
@@ -225,7 +225,7 @@ jobs:
           path: picolibc
 
       - name: Restore the Docker Image
-        uses: actions/cache@v2
+        uses: actions/cache@v4
         with:
           path: ${{ env.IMAGE_FILE }}
           key: ${{ env.IMAGE_FILE }}-${{ hashFiles( env.HASH_FILE ) }}
@@ -291,7 +291,7 @@ jobs:
           path: picolibc
 
       - name: Restore the Docker Image
-        uses: actions/cache@v2
+        uses: actions/cache@v4
         with:
           path: ${{ env.IMAGE_FILE }}
           key: ${{ env.IMAGE_FILE }}-${{ hashFiles( env.HASH_FILE ) }}
@@ -357,7 +357,7 @@ jobs:
           path: picolibc
 
       - name: Restore the Docker Image
-        uses: actions/cache@v2
+        uses: actions/cache@v4
         with:
           path: ${{ env.IMAGE_FILE }}
           key: ${{ env.IMAGE_FILE }}-${{ hashFiles( env.HASH_FILE ) }}
@@ -422,7 +422,7 @@ jobs:
           path: picolibc
 
       - name: Restore the Docker Image
-        uses: actions/cache@v2
+        uses: actions/cache@v4
         with:
           path: ${{ env.IMAGE_FILE }}
           key: ${{ env.IMAGE_FILE }}-${{ hashFiles( env.HASH_FILE ) }}
@@ -488,7 +488,7 @@ jobs:
           path: picolibc
 
       - name: Restore the Docker Image
-        uses: actions/cache@v2
+        uses: actions/cache@v4
         with:
           path: ${{ env.IMAGE_FILE }}
           key: ${{ env.IMAGE_FILE }}-${{ hashFiles( env.HASH_FILE ) }}
@@ -554,7 +554,7 @@ jobs:
           path: picolibc
 
       - name: Restore the Docker Image
-        uses: actions/cache@v2
+        uses: actions/cache@v4
         with:
           path: ${{ env.IMAGE_FILE }}
           key: ${{ env.IMAGE_FILE }}-${{ hashFiles( env.HASH_FILE ) }}
@@ -620,7 +620,7 @@ jobs:
           path: picolibc
 
       - name: Restore the Docker Image
-        uses: actions/cache@v2
+        uses: actions/cache@v4
         with:
           path: ${{ env.IMAGE_FILE }}
           key: ${{ env.IMAGE_FILE }}-${{ hashFiles( env.HASH_FILE ) }}
@@ -685,7 +685,7 @@ jobs:
           path: picolibc
 
       - name: Restore the Docker Image
-        uses: actions/cache@v2
+        uses: actions/cache@v4
         with:
           path: ${{ env.IMAGE_FILE }}
           key: ${{ env.IMAGE_FILE }}-${{ hashFiles( env.HASH_FILE ) }}
@@ -751,7 +751,7 @@ jobs:
           path: picolibc
 
       - name: Restore the Docker Image
-        uses: actions/cache@v2
+        uses: actions/cache@v4
         with:
           path: ${{ env.IMAGE_FILE }}
           key: ${{ env.IMAGE_FILE }}-${{ hashFiles( env.HASH_FILE ) }}
@@ -817,7 +817,7 @@ jobs:
           path: picolibc
 
       - name: Restore the Docker Image
-        uses: actions/cache@v2
+        uses: actions/cache@v4
         with:
           path: ${{ env.IMAGE_FILE }}
           key: ${{ env.IMAGE_FILE }}-${{ hashFiles( env.HASH_FILE ) }}
